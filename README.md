@@ -4,7 +4,7 @@ Robin.Rowe@VentureHollywood.com 2020/8/19
 
 ## Windows 10 CPU (not GPU) Installation Instructions
 
-OpenAI GPT-2 is Python and Tensorflow. Robin's bash scripts call python. Don't need to install Windows bash if invoking python directly.
+OpenAI GPT-2 is Python and Tensorflow. GPT-2 requires specific versions of Python and Tensorflow. It won't work if you install the latest of those. Robin's bash scripts call python. Don't need to install Windows bash if invoking python directly.
 
 - Install Windows git bash shell (not GUI)
 ```
