@@ -20,7 +20,7 @@ OpenAI GPT-2 is Python and Tensorflow. GPT-2 requires specific versions of Pytho
 ```
     https://git-scm.com/downloads
 ```
-- Install Python 3.6.8 64-bit, not 32-bit, not any version except 3.6.8 
+- Install Python 3.6.8 64-bit, not 32-bit, not any version except 3.6.8 64-bit because it must match up with specific version of Tensorflow.
 - During Python installer, click the box to add python to the Path.
 - Clone GPT-2 robinrowe fork.
 ```bash
