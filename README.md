@@ -26,9 +26,9 @@ OpenAI GPT-2 is Python and Tensorflow. GPT-2 requires specific versions of Pytho
 ```
 - Download corpus models. The 124M model is fine. Download larger models or all three if you wish. They won't collide.
 ```bash
-    python download_model.py 124M
-    python download_model.py 355M
-    python download_model.py 774M
+    python src/download_model.py 124M
+    python src/download_model.py 355M
+    python src/download_model.py 774M
 ```
 - Create an data directory and some subdirs. (The data directory is excluded in .gitignore, for your data.)
 ```bash
