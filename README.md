@@ -1,8 +1,14 @@
-Robin's Fork of OpenAI GPT-2
+# Robin's Fork of OpenAI GPT-2
 
 Robin.Rowe@VentureHollywood.com 2020/8/19
 
-## Windows 10 CPU (not GPU) Installation Instructions
+## GPT-2 "Hello World"
+
+GPT-2 Human Input: Mary had a little lamb. Its fleece was white as snow.
+
+GPT-2 AI Output: She hated snow. Charles was reportedly so terrified during the incident that he ran to his girlfriend and began weeping. She slept with it, just like I want to do to my darling Rachel. I doubted she would wake. Her nose was a pair of fluffy white eyes, filled with love. It wasn't good. In strange ways, she had cherished and gotten into all the lovers she had loved. But she'd never felt loved completely like she would if she had been a marriageable woman.
+
+## GPT-2 Windows 10 CPU (not GPU) Installation Instructions
 
 OpenAI GPT-2 is Python and Tensorflow. GPT-2 requires specific versions of Python and Tensorflow. It won't work if we install the latest versions of those. Robin's bash scripts call python. Don't need to install Windows bash if invoking python directly.
 
