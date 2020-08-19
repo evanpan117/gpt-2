@@ -7,10 +7,12 @@ Robin.Rowe@VentureHollywood.com 2020/8/19
 OpenAI GPT-2 is Python and Tensorflow. Robin's bash scripts call python. Don't need to install Windows bash if invoking python directly.
 
 - Install Windows git bash shell (not GUI)
-```    https://git-scm.com/downloads
+```
+    https://git-scm.com/downloads
 ```
 - Install Python 3.6.8 64-bit, not 32-bit, not any version except 3.6.8 
 - During Python installer, click the box to add python to the Path.
+- Clone GPT-2 robinrowe fork.
 ```bash
     git clone https://github.com/robinrowe/gpt-2
     cd gpt-2  
