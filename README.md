@@ -4,11 +4,11 @@ Robin.Rowe@VentureHollywood.com 2020/8/19
 
 ## GPT-2 "Hello World"
 
-### GPT-2 Human Input
+### Human-written Input
 
 Mary had a little lamb. Its fleece was white as snow.
 
-### GPT-2 AI Output
+### AI-written Output
 
 She hated snow. Charles was reportedly so terrified during the incident that he ran to his girlfriend and began weeping. She slept with it, just like I want to do to my darling Rachel. I doubted she would wake. Her nose was a pair of fluffy white eyes, filled with love. It wasn't good. In strange ways, she had cherished and gotten into all the lovers she had loved. But she'd never felt loved completely like she would if she had been a marriageable woman.
 
