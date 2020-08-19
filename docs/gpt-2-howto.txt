@@ -1,0 +1,247 @@
+ Quick installation instructions. #186
+Open
+Existencce wants to merge 11 commits into openai:master from unknown repository
++55 −0
+Conversation 2
+Commits 11
+Checks 0
+Files changed 1
+File filter...
+0 / 1 files viewed
+55 INSTALLATION.md
+Viewed
+@@ -0,0 +1,55 @@
+# Installation instructions
+
+## Without docker:
+
+### Quick Windows 10 install instructions:
+- [x] Nvidia GPU Support
+- [ ] AMD GPU Support
+- [ ] CPU Support
+1. Download and install python3 for Microsoft Windows: https://www.python.org/downloads/windows/
+2. Install Cuda 10.0, NOT 10.1.: https://developer.nvidia.com/cuda-downloads (All you should need is the runtime)
+3. Install Cudnn for 10.0: https://developer.nvidia.com/cudnn
+4. Install Visual C++ Build Tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+5. Download a .zip of the gpt-2 software: https://github.com/openai/gpt-2/archive/master.zip
+6. Open the zip, copy the software to an easily accessible folder i.e. C:\Users\yourusername\Documents\gpt-2-master
+7. Open PowerShell: Start menu - > right-click powershell (or command prompt) -> Run as Administrator
+8. Run this command to install tensorflow-gpu:
+   - ```python -m pip install --user tensorflow-gpu```
+9. Run this command to install requirements.txt after moving into the software's directory```
+   - ```cd C:\Users\YOURUSERNAME\Documents\gpt-2-master```
+   - ```python -m pip install --user -r requirements.txt```
+10. Download the model of your choice:
+   - ```python download_model.py 124M```
+   - ```python download_model.py 355M``` 
+   - ```python download_model.py 774M```
+11. Install Cuda: https://developer.nvidia.com/cuda-downloads
+12. Run the interactive sample, I reccomend making a backup of the models directory:
+   - ```xcopy C:\Users\YOURUSERNAME\Documents\gpt-2-master\models C:\Users\YOURUSERNAME\Documents\gpt-2-master\modelsbackup /O /X /E /H /K```
+   - ```python src/interactive_conditional_samples.py```
+
+### Quick Ubuntu 18.04 install instructions:
+- [x] Nvidia GPU Support
+- [ ] AMD GPU Support
+- [x] CPU Support
+1. Update apt:
+    - ```apt update```
+2. Install python3, python3-pip and git:
+    - ```apt install python3 python3-pip git```
+3. Install cuda if you are running on a GPU: https://developer.nvidia.com/cuda-downloads
+4. Clone the software and navigate into the folder:
+    - ```git clone https://github.com/openai/gpt-2.git```
+    - ```cd gpt-2```
+5. Install tensorflow gpu or cpu: (package tensorflow for cpu or tensorflow-gpu for gpu assuming you have cuda and drivers)
+already installed.):
+    - ```python3 -m pip install tensorflow```
+    - ```python3 -m pip install tensorflow-gpu```
+6. Install the requirements file:
+    - ```python3 -m pip install -r requirements.txt```
+7. Download a model: (The current largest model is 774M with a capital M):
+   - ```python3 download_model.py 124M```
+   - ```python3 download_model.py 355M``` 
+   - ```python3 download_model.py 774M```
+
+8. Run the interactive sample, I reccomend making a backup of the models directory:
+    - ```cp models modelsbackup -R```
+    - ```python3 src/interactive_conditional_samples.py```
+	
+	
+-------------------------------------------------
+
+
+!pip install tensorflow==1.15
+!pip install tensorflow-gpu==1.15
+!pip install 'tensorflow-estimator<1.15.0rc0,>=1.14.0rc0' --force-reinstall
+
+I placed these lines of code before
+!pip3 install -r requirements.txt
+and after installing the requirements
+from google.colab import files
+
+rower@Lenovo17 MINGW64 /c/code/github/gpt-2 (master)
+$ python src/interactive_conditional_samples.py
+2020-08-17 22:36:08.484878: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudart64_101.dll'; dlerror: cudart64_101.dll not found
+2020-08-17 22:36:08.517524: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Traceback (most recent call last):
+  File "src/interactive_conditional_samples.py", line 9, in <module>
+    import model, sample, encoder
+  File "C:\code\github\gpt-2\src\model.py", line 3, in <module>
+    from tensorflow.contrib.training import HParams
+ModuleNotFoundError: No module named 'tensorflow.contrib'
+
+7a8
+> import sys
+69,74c70,71
+<
+<         while True:
+<             raw_text = input("Model prompt >>> ")
+<             while not raw_text:
+<                 print('Prompt should not be empty!')
+<                 raw_text = input("Model prompt >>> ")
+---
+>         for i in 1:
+>             raw_text = sys.stdin.read()
+## Example use:
+# echo "<|endoftext|>" | python src/conditional_samples.py --top_p 0.99 --model_name 774M --nsamples 1000
+
+
+rower@Lenovo17 MINGW64 /c/code/github/gpt-2 (master)
+$ echo "<|endoftext|>" | python src/conditional_samples.py --top_p 0.99 --model_name 774M --nsamples 1000
+2020-08-18 12:56:23.138978: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudart64_101.dll'; dlerror: cudart64_101.dll not found
+2020-08-18 12:56:23.140574: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Traceback (most recent call last):
+  File "src/conditional_samples.py", line 9, in <module>
+    import model, sample, encoder
+  File "C:\code\github\gpt-2\src\model.py", line 3, in <module>
+    from tensorflow.contrib.training import HParams
+ModuleNotFoundError: No module named 'tensorflow.contrib'
+
+
+!pip install tensorflow==1.15
+!pip install tensorflow-gpu==1.15
+!pip install 'tensorflow-estimator<1.15.0rc0,>=1.14.0rc0' --force-reinstall
+
+I placed these lines of code before
+!pip3 install -r requirements.txt
+and after installing the requirements
+from google.colab import files
+
+
+Find available versions (some example results shown):
+
+$ curl -s https://storage.googleapis.com/tensorflow |xmllint --format - |grep whl
+
+<Key>linux/gpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl</Key>
+<Key>linux/gpu/tensorflow-0.9.0-cp27-none-linux_x86_64.whl</Key>
+<Key>linux/gpu/tensorflow-0.11.0-cp27-none-linux_x86_64.whl</Key>
+<Key>linux/gpu/tensorflow-0.10.0-cp27-none-linux_x86_64.whl</Key>
+
+You can, of course, filter the results further by piping through additional instances of grep.
+
+Pick the version you want and install for Python with pip...
+
+$ TFVERSION=linux/gpu/tensorflow-0.10.0-cp27-none-linux_x86_64.whl
+$ pip install https://storage.googleapis.com/tensorflow/$(TFVERSION)
+
+libtensorflow/libtensorflow-cpu-windows-x86_64-1.3.0.zip
+$ TFVERSION=linux/gpu/tensorflow-0.10.0-cp27-none-linux_x86_64.whl
+$ pip install https://storage.googleapis.com/tensorflow/$(TFVERSION)
+
+
+https://pypi.org/project/tensorflow/1.4.0/#files
+tensorflow-1.4.0-cp36-cp36m-win_amd64.whl (28.3 MB) 	Wheel 	cp36 	Nov 1, 2017 	
+
+poetry:
+python src/interactive_conditional_samples.py --top_k 40 --temperature 0.9  --seed 2000 \
+    --model_name 2019-03-06-gwern-gpt2-poetry-prefix-projectgutenberg-network-224474
+
+
+https://www.python.org/downloads/windows/
+Python 3.6.8 - Dec. 24, 2018
+Note that Python 3.6.8 cannot be used on Windows XP or earlier.
+Download Windows x86-64 executable installer
+
+
+### Windows 10 CPU (not GPU) Installation Instructions:
+1. Install Python 64-bit, not 32-bit (3.6.8 version only)
+2. git clone https://github.com/openai/gpt-2.git
+3. cd gpt-2  
+
+cd /c/code/github/gpt-2/
+python --version
+Python 3.6.8 (not Python 3.8.5)
+python -m pip install --upgrade pip
+pip install tensorflow==1.15.3
+pip install -r requirements.txt
+python download_model.py 124M
+python download_model.py 355M
+python download_model.py 774M
+
+cp models modelsbackup -R
+
+export PYTHONWARNINGS="ignore"
+python src/interactive_conditional_samples.py --help
+
+ python src/interactive_conditional_samples.py --help
+INFO: Showing help with the command 'interactive_conditional_samples.py -- --help'.
+
+NAME
+    interactive_conditional_samples.py - Interactively run the model :model_name=124M : String, which model to use :seed=None : Integer seed for random number generators, fix seed to reproduce results :nsamples=1 : Number of samples to return total :batch_size=1 : Number of batches (only affects speed/memory).  Must divide nsamples. :length=None : Number of tokens in generated text, if None (default), is determined by model hyperparameters :temperature=1 : Float value controlling randomness in boltzmann distribution. Lower temperature results in less random completions. As the temperature approaches zero, the model will become deterministic and repetitive. Higher temperature results in more random completions. :top_k=0 : Integer value controlling diversity. 1 means only 1 word is considered for each step (token), resulting in deterministic completions, while 40 means 40 words are considered at each step. 0 (default) is a special setting meaning no restrictions. 40 generally is a good value. :models_dir : path to parent folder containing model subfolders (i.e. contains the <model_name> folder)
+
+SYNOPSIS
+    interactive_conditional_samples.py <flags>
+
+DESCRIPTION
+    Interactively run the model 
+:model_name=124M 
+: String, which model to use 
+:seed=None 
+: Integer seed for random number generators, fix seed to reproduce results 
+:nsamples=1 
+: Number of samples to return total 
+:batch_size=1 
+: Number of batches (only affects speed/memory).  Must divide nsamples. 
+:length=None 
+: Number of tokens in generated text, if None (default), is determined by model hyperparameters 
+:temperature=1 
+: Float value controlling randomness in boltzmann distribution. Lower temperature results in less random completions. As the temperature approaches zero, the model will become deterministic and repetitive. Higher temperature results in more random completions. 
+:top_k=0 
+: Integer value controlling diversity. 1 means only 1 word is considered for each step (token), resulting in deterministic completions, while 40 means 40 words are considered at each step. 0 (default) is a special setting meaning no restrictions. 40 generally is a good value. 
+:models_dir 
+: path to parent folder containing model subfolders (i.e. contains the <model_name> folder)
+
+FLAGS
+    --model_name=MODEL_NAME
+    --seed=SEED
+    --nsamples=NSAMPLES
+    --batch_size=BATCH_SIZE
+    --length=LENGTH
+    --temperature=TEMPERATURE
+    --top_k=TOP_K
+    --top_p=TOP_P
+    --models_dir=MODELS_DIR
+
+
+
+python src/interactive_conditional_samples.py --model_name=774M
+python -W ignore src/interactive_conditional_samples.py --top_p 0.99 --model_name 774M --nsamples 1000
+
+
+    --nsamples=NSAMPLES
+    --batch_size=BATCH_SIZE
+    --length=LENGTH
+	
+   - ```python download_model.py 124M```
+   - ```python download_model.py 355M``` 
+   - ```python download_model.py 774M```
+
+ Mary had a little lamb. It's fleese was white as snow.
+
+export TF_CPP_MIN_LOG_LEVEL=2
+cat 56007/b7.txt | python src/conditional_samples.py --model_name 774M --nsamples 8
+cat 56007/b7.txt | python src/conditional_samples.py --model_name 124M --nsamples 8 --top_k 40 --length 100 --temperature 0.5
+
+
+cat 56007/c1.txt | python src/conditional_samples.py --model_name 124M --nsamples 10 --top_k 40 --length 120 --temperature 0.5

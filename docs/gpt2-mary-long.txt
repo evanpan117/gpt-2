@@ -1,0 +1,71 @@
+$ python -W ignore src/interactive_conditional_samples.py --top_p 0.99 --model_name 774M --nsamples 1000
+
+
+
+GPT-2 prompt>>> Mary had a little lamb. It's fleese was white as snow.
+================ SAMPLE 1 ================
+ She hated snow.
+
+39 One, two, three! Satisfaction card, to Brittany
+
+
+PARIS, France [Reference is improved in the first printed section with additional emphasis.]
+
+Berry, Anne Richards. May 1841. Four Hundred Pounds of Waves. Berkshire Homestead and Memories; a little practice paper; on views of an artisan shop, with structures for exploding the stuff. One rose from fern; another and a poppy from a giant thorn. Hemp shawls; no marker other than reverse and the title page. From the Road to Ravelry project. Classification of ranges from good to poor: A Fine Finish, more suitable for beginners. (1) Weaved when 2 inches thick (20 percent it is now), a pattern of rich colours and geometric connections has been introduced to make them practical and a profitable undertaking in the operation, with the added advantage of producing a very fine fabric. (2) It has been shown to make more fabric than any other weave, perhaps 3 or 4 times as good as the best commercial looms. I have found that it has been the practice of the maker to weave the width-thickness ratio almost exactly as it appears on the table, leaving the dependency of the measure on the size of the pieces. (3) The canvas is smooth with a basic fibrous plate content, as are our weather-tostees. This is a light brown colour which grows to a light or dark gray in so long a time as the time is broken up. Many folks interested in knitting, knitting cards or just crochet have been excited. I have had several visitors request color to work on. I think it is a good practice to keep the idea of this a gift to giving to the giving.
+
+Berridge, Violet Alice. An excellent encouragement to all yarn-lovers to try the Fruit Loops. 2002
+
+Barol, Rose King. "Thinning Your Rhinos." Simpson's magazine, January-February 1942. We can look forward to fuller charts of yarns and measurements in 1998!
+
+Benton, Ida L. "A World of Three Lines." Woman's Home Companion, December 1963. To be admired by the injured school Little League diamond.
+
+Beal, Josephine B. "The Book's Ball on Groove Murals." Art Times, March/April 1989. A Bath Cellar explosion? Initial studies gave ay, "Mac Bitch. Games please!" But the railing has a mood!
+
+================ SAMPLE 2 ================
+ ...a little lamb."
+
+Charles was reportedly so terrified during the incident that he ran to his girlfriend and began weeping. The judge reportedly had to look at that photo and scream: "Your honor, it's regretful that he took that photograph." The judge pointed out that Charlie had been blacked out in the original photo from the video and that the adult who had distributed it, whom they never named, was not blacked out ▒ at least not in the action reported.
+
+The response was a mix, some in the courtroom, obviously devastated and raised their voices in distraught laughter when Judge Goodman received a copy of the apology on Wednesday. Yet, in the past also, other Republicans ▒ who you may recognize if you are a herded cattle in Iowa or a creature from the lower eight parts of Springfield ▒ have been asked to apologize for body-shamering and other sexual violence against women. Sensible all too often are the excuses that they were just caught in a "taint." We no longer judge whether people should be punished for physical or sexual assault by calling it sexual assault or taint. We have been intensely conditioned to not care. In my mind, this is a logical fallacy. All this asks is that once we are free from the shackles of shame, responsibility and fear to ask when, why and how something happened before we stand in judgement ... What exactly constitutes deep shame and shamefulness will vary ▒ but subjective integrity and self-love are not to be debated. Crime or accident may be covered or grand jury inattention may be confused for indifference to nature, but contamination, contamination or adulteration of a person's enough-rare right to bodily integrity is not. To phrase it worse (and just to be on the safe side), rape is when you are too in love with your victim and work her down into a state of terror and ruin or, more likely, physical discomfort. This is the unseen, unseen event. Forcing the person who perpetrated or was complicit in the committing of a crime to participate and share morally is a hallmark of environmental ideology. It is based on the idea that a person's stationality, occupation, certitude and behavior mean more than actual biology, physics or biology itself. That this is what is important or commendable is not significant or worthy of debate. The real contest is not that the identity that counts ▒ picture actress or polling precinct supervisor ▒ is what matters most if a woman is assaulted. It is the identity of the power-over scene. That
+================ SAMPLE 3 ================
+ She slept with it, just like I want to do to my darling Rachel. I doubted she would wake. Her nose was a pair of fluffy white eyes, filled with love. It wasn't good.
+
+I felt so bad, knowing how she felt. It wasn't so good I just brushed it away to find Betty but nonetheless, I wanted to do the same. Because I loved Rachel.
+
+The doorbell rang and Miss Potomac locked the door. I felt an instant regret because I had buried my face in the purse instead of going for the book. Oh well. Whatever.
+
+I waited for her to get up then peered into the bathroom. There was only a puddle under the sink, a little soap and that was it.
+
+I just wanted to call for her and, possibly, my puppy. She was a little tipsy from drinking pineapple juice and crackers and I grew tired of waiting.
+
+"Get me a lipstick, honey." She grunted, slobbing her way down the sink into the toilet. Her face flashed triumph as she took and began to apply.
+
+She didn't turn around for a long time before I stood up and walked around the room. "Rachel. Are you awake?" I asked, my little heart beating.
+
+"Yessir, I'm awake. What are you doing here? I'm here!"
+
+"Found your pockets," I said. "Cold fingers on the bathroom counter to reach in."
+
+"That's No.20 and No.18 from the front." She opened the cooler and unlatched the inner one up, both of which were covered in ice. "Pipe one out."
+
+I walked to the fridge and pulled out a cigarette. I lit one up and pounded the snooze button. That great big refrigerator is the "crazy one" that reminds me why I stay at a lodge instead of a dorm but brings me out of my rut, doesn't it? I recalled the radio on and rummaged through some Trader Joe's, always grateful to get a little stop in. The cold menagerie of leaf and hard candies dropped me on my face again, but by the time I took one in, the night was coming to an end. I looked at the clock and rattled my fingers rapidly, hoping for break from the endless zip around my chest.
+
+"Easy, you're going to burn the conversation," she said. Maybe just become a
+================ SAMPLE 4 ================
+ In strange ways, she had cherished and gotten into all the lovers she had loved. But she'd never felt loved completely like she would if she had been a marriageable woman."
+
+Anyway, here was where we get a glimpse into Kerrigan's potential as a Republic General. However, it seems like Kerrigan▒through her relationship with her son Zagara▒isn't on the same page when it comes to Power structures.
+
+Once again, I'd prefer this more of a "they All won't work together" scenario than the "they need a neutral power" scenario where Manaroo has somebody Solidified in then takes out a deep reactor core somehow.
+
+Cynthia Darecu-RoD calls Kerrigan out on the implication that she keeps her power structure of essential echos Program Computers to personal command, and is content to have Zagara Type In Command and Face To Face after her in battle. This is where her "if we can all agree to summon the best people, will we be welcoming the best?" attitude comes into play.
+
+"Arks, you and the dead Birds are my siblings▒or at least that may be the way I understand you. So do you assure me that each Bird is not a grotesque example of a trivialization of what is an important symbiotic bond?"
+
+What I take from these lines is her understanding of who the Khala is, just as Hanover's protoss misunderstood them as Traitors. For some reason, I think she and Cherish regard all individually so much much more like animals than knowing individuals. That has an various bias to it. Whatever's going on with Dominion and Terran/Samarassi relationships unfortunately, it's a piece of literature that has lots of compelling ideas and words that I'm gravitating to while making notes in a notebook.
+
+Also, Diq Tarr most likely doesn't really know what he's doing in this rewrites volume 3, instead of allowing the Wolf Clan Avatar Corps Finances Broodlord on the heart of his empire in is own honor. I use lawyers or other specialists who are equally as unrealistic on soldier diet, but this gives him more to believe in. For what of his position does he have to hold?
+
+BDSM Dambling! This was because I keep an ALT+F10 icon there in my sidebar. Also, I really like the Strooked Ghost Burners. Twice.
+
+Here are some real details from this aspect that I really
