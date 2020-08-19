@@ -39,7 +39,7 @@ OpenAI GPT-2 is Python and Tensorflow. Robin's bash scripts call python. Don't n
 - Create as many 1-paragraph input files in the input directory as you wish to process. GPT-2 is complete-my-thought predictive AI. Give it one paragraph of text as an input and it takes it from there. Make your input paragraph as concise and cogent as you can. GPT-2 will try to match it for style. Avoid padding with meaningless words in phrasing, such as, "There is...".
 - Edit any of my bash scripts to meet your needs.
 ```bash
-    vi bash/go_gpt2_99
+    vi bash/go_gpt2_99_124M.sh
 ```
 - Run your script.
 ```bash
