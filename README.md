@@ -14,13 +14,13 @@ She hated snow. Charles was reportedly so terrified during the incident that he 
 
 ## GPT-2 Windows 10 CPU (not GPU) Installation Instructions
 
-OpenAI GPT-2 is Python and Tensorflow. GPT-2 requires specific versions of Python and Tensorflow. It won't work if we install the latest versions of those. Robin's bash scripts call python. Don't need to install Windows bash if invoking python directly.
+OpenAI GPT-2 is Python and Tensorflow. GPT-2 requires specific versions of Python and Tensorflow. It doesn't work with the latest versions of those programs. Robin's bash scripts call python. Don't need to install Windows bash if invoking python directly.
 
 - Install Windows git bash shell (not GUI)
 ```
     https://git-scm.com/downloads
 ```
-- Install Python 3.6.8 64-bit, not 32-bit, not any version except 3.6.8 64-bit because it must match up with specific version of Tensorflow.
+- Install Python 3.6.8 64-bit, not 32-bit, not any version except 3.6.8 64-bit, because it must match up with specific version of Tensorflow.
 - During Python installer, click the box to add python to the Path.
 - Clone GPT-2 robinrowe fork.
 ```bash
