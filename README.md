@@ -40,7 +40,7 @@ OpenAI GPT-2 is Python and Tensorflow. GPT-2 requires specific versions of Pytho
     python src/download_model.py 355M
     python src/download_model.py 774M
 ```
-- Create an data directory and some subdirs. (The data directory is excluded in .gitignore, for your data.)
+- Create a data directory and some subdirs for input and output files. By the way, the data directory is already excluded in .gitignore, is intended just for your data.
 ```bash
     mkdir data
     mkdir data/input
