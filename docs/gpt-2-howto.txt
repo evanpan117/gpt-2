@@ -164,20 +164,32 @@ Note that Python 3.6.8 cannot be used on Windows XP or earlier.
 Download Windows x86-64 executable installer
 
 
-### Windows 10 CPU (not GPU) Installation Instructions:
-1. Install Python 64-bit, not 32-bit (3.6.8 version only)
-2. git clone https://github.com/openai/gpt-2.git
-3. cd gpt-2  
+## Windows 10 CPU (not GPU) Installation Instructions
+
+Install git bash shell (not GUI)
+	https://git-scm.com/downloads
+Install Python 3.6.8 64-bit, not 32-bit, not any version except 3.6.8 
+During Python installer, click the box to add python to the Path
+	git clone https://github.com/robinrowe/gpt-2
+	cd gpt-2  
+	python --version
+Python 3.6.8 (not any other Python!)
+	python -m pip install --upgrade pip
+	pip install tensorflow==1.15.3
+	pip install -r requirements.txt
+Download corpus models. The 124M model is fine. Download larger models or all three if you wish. They won't collide.
+	python download_model.py 124M
+	python download_model.py 355M
+	python download_model.py 774M
+Create an input directory
+	mkdir input
+Create as many 1-paragraph input files in the input directory as you wish to process. GPT-2 is complete-my-thought predictive AI. Give it one paragraph of text as an input and it takes it from there. Make your input paragraph as concise and cogent as you can. GPT-2 will try to match it for style. Avoid padding with meaningless words in phrasing, such as, "There is...".
+Edit any of my bash scripts to meet your needs.
+	vi bash/go_gpt2_99_124M.sh
+Run the script.
+	sh bash/go_gpt2_99_124M.sh
 
 cd /c/code/github/gpt-2/
-python --version
-Python 3.6.8 (not Python 3.8.5)
-python -m pip install --upgrade pip
-pip install tensorflow==1.15.3
-pip install -r requirements.txt
-python download_model.py 124M
-python download_model.py 355M
-python download_model.py 774M
 
 cp models modelsbackup -R
 

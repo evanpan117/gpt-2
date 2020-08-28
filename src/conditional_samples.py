@@ -8,7 +8,7 @@ import tensorflow as tf
 import model, sample, encoder
 import sys
 # tf.get_logger().setLevel('INFO')
-from datetime import date
+from datetime import datetime
 
 
 def output_model(
@@ -42,7 +42,7 @@ def output_model(
      :models_dir : path to parent folder containing model subfolders
      (i.e. contains the <model_name> folder)
     """
-    print(date.today())
+    print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     models_dir = os.path.expanduser(os.path.expandvars(models_dir))
     if batch_size is None:
         batch_size = 1
@@ -84,9 +84,9 @@ def output_model(
                 generated += 1
                 text = enc.decode(out[i])
                 print("=" * 30 + " SAMPLE " + str(generated) + " " + "=" * 30)
-                print(text)
+                print(text.encode('utf-8'))
         print("=" * 80)
-        print(date.today())
+        print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
 if __name__ == '__main__':
     fire.Fire(output_model)
