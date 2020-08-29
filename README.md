@@ -6,7 +6,7 @@ If you're seeking a fork of GPT-2 that is being maintained, that you may actuall
 
 GPT-2 is written in Python. I created conditional_samples.py and some bash scripts that make it easy to do production runs of GPT-2. It just needs a directory of input text files for GPT-2 to process and an empty output directory. If you follow my installation instructions here, you can use GPT-2 without being a programmer. Just tweak the settings in one of my example bash scripts to point to your directory locations. There are three different size ML models provided. If the smallest doesn't give output text you like, try larger.
 
-GPT-2 is a complete-my-thought type of AI. In my Hello World example below, I've provided the first two lines of input to GPT-2. The output is what GPT-2 did with it. Pretty cool. 
+GPT-2 is a complete-my-thought type of AI. In my Hello World example below, I've provided the first two lines of input to GPT-2. The output is what GPT-2 did with it. Pretty cool. By the way, if you are seeking the source code of GPT-3, you won't find it anywhere: https://onezero.medium.com/gpt-3-is-an-amazing-research-tool-openai-isnt-sharing-the-code-d048ba39bbfd
 
 ## GPT-2 "Hello World"
 
