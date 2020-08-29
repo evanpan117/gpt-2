@@ -4,9 +4,9 @@ Robin.Rowe@VentureHollywood.com 2020/8/19
 
 If you're seeking a fork of GPT-2 that is being maintained, that you may actually use because it works, you've come to the right place. This is the software that's had articles written about students using it to write their term papers. I'm using GPT-2 running on a nothing special Windows 10 laptop to help me write a standards document on innovation idea management (ANSI/ISO 56007).
 
-GPT-2 is written in Python. I created conditional_samples.py and some bash scripts that make it easy to do production runs of GPT-2. It just needs a directory of input text files for GPT-2 to process and an empty output directory. If you follow my installation instructions here, you can use GPT-2 without being a programmer. Just tweak the settings in one of my example bash scripts to point to your directory locations. There are three different size ML models provided. If the smallest doesn't give output text you link, try larger.
+GPT-2 is written in Python. I created conditional_samples.py and some bash scripts that make it easy to do production runs of GPT-2. It just needs a directory of input text files for GPT-2 to process and an empty output directory. If you follow my installation instructions here, you can use GPT-2 without being a programmer. Just tweak the settings in one of my example bash scripts to point to your directory locations. There are three different size ML models provided. If the smallest doesn't give output text you like, try larger.
 
-GPT-2 is a complete-my-thought type of AI. In the Hello World example below, I've provided the first two lines of input to GPT-2. The output is what GPT-2 did with that. Pretty cool. 
+GPT-2 is a complete-my-thought type of AI. In my Hello World example below, I've provided the first two lines of input to GPT-2. The output is what GPT-2 did with it. Pretty cool. 
 
 ## GPT-2 "Hello World"
 
